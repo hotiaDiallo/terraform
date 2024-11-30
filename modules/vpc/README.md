@@ -12,7 +12,7 @@ Each tier has one subnet in each AZs for resilience.
 
 ```
 module "vpc" {
-  source           = "github.com/hotiaDiallo/aws-custom-vpc-module"
+  source           = "./modules/vpc"
   vpc_cidr         = var.vpc_cidr
   name_prefix      = var.name_prefix
   web_subnet_cidrs = var.web_subnet_cidrs
